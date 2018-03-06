@@ -1,5 +1,5 @@
 The Ice Plus mod adds a new tier of items after defeating the Eater of Worlds or Brain of Cthulu to the Ice biome! 4 new weapons, 1 new armor set, and 1 new summon!
-v1.0.0.5:
+v1.0.1:
 + added compatability recipes for Thorium Mod
 v1.0.0.4:
 * First Github release! Nothing else changed.
