@@ -1,10 +1,13 @@
 using Terraria.ModLoader;
+using Terraria.ID;
 
 namespace IcePlus.Items
 {
 	public class IceSpike : ModItem
 	{
-		public override void SetStaticDefaults()
+        Mod thoriumMod = ModLoader.GetMod("ThoriumMod");
+
+        public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Ice Spike");
 		}
@@ -14,6 +17,18 @@ namespace IcePlus.Items
 			item.maxStack = 99;
 			item.rare = 0;
 		}
-		
-	}
+
+        public override void AddRecipes()
+        {
+            if (thoriumMod != null)
+            {
+                ModRecipe recipe = new ModRecipe(mod);
+                recipe.AddIngredient(thoriumMod.ItemType("IcyShard"), 2);
+                recipe.AddTile(TileID.WorkBenches);
+                recipe.SetResult(this);
+                recipe.AddRecipe();
+            }
+        }
+
+    }
 }

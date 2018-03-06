@@ -1,10 +1,11 @@
 using Terraria.ModLoader;
+using Terraria.ID;
 
 namespace IcePlus
 {
 	class IcePlus : Mod
 	{
-		public IcePlus()
+        public IcePlus()
 		{
 			Properties = new ModProperties()
 			{
@@ -13,5 +14,5 @@ namespace IcePlus
 				AutoloadSounds = true
 			};
 		}
-	}
+    }
 }
