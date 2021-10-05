@@ -11,6 +11,7 @@ namespace IcePlus.Items
 		{
 			DisplayName.SetDefault("Ice Tear");
 		}
+
 		public override void SetDefaults()
 		{
 			item.value = 200;

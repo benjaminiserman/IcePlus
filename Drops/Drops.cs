@@ -8,7 +8,7 @@ namespace IcePlus.Drops
 	{
 		public override void NPCLoot(NPC npc)
 		{
-			if (NPC.downedBoss2) 
+			if (NPC.downedBoss2) // if eater of worlds / brain of cthulu is killed
 			{
 				if (npc.type == NPCID.SpikedIceSlime)
 				{

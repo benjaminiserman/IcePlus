@@ -11,6 +11,7 @@ namespace IcePlus.Items
 		{
 			DisplayName.SetDefault("Ice Spike");
 		}
+
 		public override void SetDefaults()
 		{
 			item.value = 30;
@@ -29,6 +30,5 @@ namespace IcePlus.Items
                 recipe.AddRecipe();
             }
         }
-
     }
 }

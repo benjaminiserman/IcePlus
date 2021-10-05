@@ -13,6 +13,7 @@ namespace IcePlus.Items
 			DisplayName.SetDefault("Snowy Fur");
 			Tooltip.SetDefault("'Warm and fluffy.'");
 		}
+
 		public override void SetDefaults()
 		{
 			item.value = 60;
