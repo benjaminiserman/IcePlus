@@ -6,7 +6,6 @@ namespace IcePlus
 {
 	public class IcePlusPlayer : ModPlayer
 	{
-		
 		private const int saveVersion = 0;
 		
 		public bool flinxMinion = false;

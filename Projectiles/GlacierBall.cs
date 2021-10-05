@@ -2,7 +2,6 @@ using System;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -37,11 +36,13 @@ namespace IcePlus.Projectiles
             float num1 = (float)texture.Height;
             Vector2 vector2_4 = mountedCenter - position;
             float rotation = (float)Math.Atan2((double)vector2_4.Y, (double)vector2_4.X) - 1.57f;
+
             bool flag = true;
             if (float.IsNaN(position.X) && float.IsNaN(position.Y))
                 flag = false;
             if (float.IsNaN(vector2_4.X) && float.IsNaN(vector2_4.Y))
                 flag = false;
+
             while (flag)
             {
                 if ((double)vector2_4.Length() < (double)num1 + 1.0)
@@ -62,8 +63,9 @@ namespace IcePlus.Projectiles
 			
 			Vector2 usePos = projectile.position;
 			Vector2 rotVector = (projectile.rotation - MathHelper.ToRadians(90f)).ToRotationVector2();
-			usePos += rotVector * 16f;			
-			if(Main.rand.Next(5) == 0)
+			usePos += rotVector * 16f;		
+            
+			if (Main.rand.Next(5) == 0)
 			{	
 				Dust dust = Dust.NewDustDirect(usePos, projectile.width, projectile.height, 15);
 				dust.position = (dust.position + projectile.Center) / 2f;
@@ -71,7 +73,6 @@ namespace IcePlus.Projectiles
 				dust.velocity *= 0.75f;
 				dust.noGravity = false;
 				usePos -= rotVector * 8f;
-
 			}
 
             return true;

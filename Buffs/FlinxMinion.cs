@@ -16,10 +16,12 @@ namespace IcePlus.Buffs
 		public override void Update(Player player, ref int buffIndex)
 		{
 			IcePlusPlayer modPlayer = player.GetModPlayer<IcePlusPlayer>(mod);
+
 			if (player.ownedProjectileCounts[mod.ProjectileType("FlinxMinion")] > 0)
 			{
 				modPlayer.flinxMinion = true;
 			}
+
 			if (!modPlayer.flinxMinion)
 			{
 				player.DelBuff(buffIndex);

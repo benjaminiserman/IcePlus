@@ -5,7 +5,6 @@ using Terraria.ModLoader;
 
 namespace IcePlus.Projectiles
 {
-	
 	public class FlinxMinion : Minion
 	{
 		public override void SetStaticDefaults()
@@ -35,17 +34,18 @@ namespace IcePlus.Projectiles
 		{
 			Player player = Main.player[projectile.owner];
 			IcePlusPlayer modPlayer = player.GetModPlayer<IcePlusPlayer>(mod);
+
 			if (player.dead)
 			{
 				modPlayer.flinxMinion = false;
 			}
+
 			if (modPlayer.flinxMinion)
 			{
 				projectile.timeLeft = 2;
 			}
 		}
 
-		
 		public override bool TileCollideStyle(ref int width, ref int height, ref bool fallThrough)
 		{
 			fallThrough = false;
@@ -58,10 +58,8 @@ namespace IcePlus.Projectiles
 			{
 				projectile.Kill();
 			}
+
 			return false;
 		}
-
-
-
 	}
 }

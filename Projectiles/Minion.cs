@@ -10,6 +10,5 @@ namespace IcePlus.Projectiles
 		}
 
 		public abstract void CheckActive();
-
 	}
 }

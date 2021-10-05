@@ -5,7 +5,6 @@ namespace IcePlus.Items.Weapons
 {
 	public class IceBolt : ModItem
 	{
-
 		public override void SetDefaults()
 		{
 			item.CloneDefaults(ItemID.Stake);
