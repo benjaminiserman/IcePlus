@@ -1,4 +1,6 @@
 # IcePlus
+![Downloads](https://img.shields.io/github/downloads/winggar/IcePlus/total?style=for-the-badge)
+
 The IcePlus mod for Terraria adds more items to the Ice biome post Eater of Worlds/Brain of Cthulu.
 
 I'm adding this readme file like, four years after I actually made this mod.
